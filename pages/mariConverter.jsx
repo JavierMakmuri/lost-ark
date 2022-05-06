@@ -1,19 +1,20 @@
 import React, { useState } from 'react'
 import styles from '../styles/MariShop.module.css'
+import Image from 'next/image'
 
 const MariConverter = () => {
   const [crystalPrice, setCrystalPrice] = useState(0)
   // gpc = gold per crystal
   const [GPC, setGPC] = useState(0)
 
-  function round2dp(num) {
+  const round2dp = (num) => {
     return Math.round(num * 100) / 100
   }
 
   return (
     <div>
-      <img src="/mari.png" className={styles.mari}></img>
-      <h1 className={styles.h1}>Mari's Secret Shop Crystal to Gold converter</h1>
+      <img src="/mari.png" alt="image of mari" className={styles.mari}/>
+      <h1 className={styles.h1}>Mari&#x27;s Secret Shop Crystal to Gold converter</h1>
 
       <form className={styles.form}>
         <label>Crystal Price: </label>
