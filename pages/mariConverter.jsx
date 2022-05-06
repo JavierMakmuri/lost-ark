@@ -25,8 +25,8 @@ const MariConverter = () => {
       <div className={styles.itemDisplay}>
         <p className={styles.gold}>Prices shown as gold/piece</p>
         <h3 className={styles.itemTitle}>Honing Mats</h3>
-        <p>Guardian Crystal: <span className={styles.price}>{round2dp(GPC * 270 /1000)}</span></p>
-        <p>Destruction Crystal: <span className={styles.price}>{round2dp(GPC * 300 / 500)}</span></p>
+        <p>Guardian Crystal (bundles of 10): <span className={styles.price}>{round2dp(GPC * 270 / 1000 * 10)}</span></p>
+        <p>Destruction Crystal (bundles of 10): <span className={styles.price}>{round2dp(GPC * 300 / 500 * 10)}</span></p>
         <p>Honor Leapstone: <span className={styles.price}>{round2dp(GPC * 40 / 20)}</span></p>
         <p>Great Honor Leapstone: <span className={styles.price}>{round2dp(GPC * 50 / 5)}</span></p>
 
